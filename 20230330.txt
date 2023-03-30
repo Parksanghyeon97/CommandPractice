@@ -42,133 +42,6 @@
 2023-03-30 14:26:21 ls -l /etc/profile
 2023-03-30 14:26:21 cat /etc/profile
 2023-03-30 14:26:21 vi /etc/profile
-2023-03-29 22:55:32 history
-2023-03-29 22:55:39 cd
-2023-03-29 22:55:39 ls
-2023-03-29 22:55:41 cd ..
-2023-03-29 22:55:42 ls
-2023-03-29 22:55:45 history
-2023-03-29 22:55:54 vi /etc/profile
-2023-03-29 22:57:34 source /etc/profile
-2023-03-29 22:57:36 history | egrep $1=="dat"
-2023-03-29 22:58:35 date
-2023-03-29 23:00:10 date + "%G%m%e%H%M"
-2023-03-29 23:00:31 date + "%Y"
-2023-03-29 23:01:04 date +%a
-2023-03-29 23:01:08 date +%Y
-2023-03-29 23:01:13 date +%Y-%m
-2023-03-29 23:01:16 date +%Y-%m-%d
-2023-03-29 23:02:23 history | egrep '`date +%Y-%m-%d`'
-2023-03-29 23:02:47 history | grep "2023-03-29"
-2023-03-29 23:03:10 cd ~
-2023-03-29 23:03:17 mkdir -p test
-2023-03-29 23:03:18 ls
-2023-03-29 23:03:20 cd test
-2023-03-29 23:03:21 ls
-2023-03-29 23:04:35 history | grep `history | grep $(date +%Y-%m-%d)
-2023-03-29 23:04:53 history | grep `history | grep "$(date +%Y-%m-%d)"
-2023-03-29 23:05:08 history | grep "$(date +%Y-%m-%d)"
-2023-03-29 23:09:48 history | grep "$(date +%Y-%m-%d)" | awk '$1 == "$(date +%Y-%m-%d)"'
-2023-03-29 23:09:55 history | awk '$1 == "$(date +%Y-%m-%d)"'
-2023-03-29 23:10:00 history | awk '$1 == "$(date +%Y-%m-%d)"'
-2023-03-29 23:10:12 history | grep "$(date +%Y-%m-%d)"
-2023-03-29 23:11:31 history | grep "$(date +%Y-%m-%d)" | awk { $1 == $(date +%Y-%m-%d)}
-2023-03-29 23:13:00 history | grep "$(date +%Y-%m-%d)" | awk { print $1 }
-2023-03-29 23:13:15 history | grep "$(date +%Y-%m-%d)" | awk '{ print $1 }'
-2023-03-29 23:13:18 history | grep "$(date +%Y-%m-%d)" | awk '{ print $2 }'
-2023-03-29 23:14:17 history | grep "$(date +%Y-%m-%d)" | awk '{ "Date = "print $2 "Command = "print $4 }'
-2023-03-29 23:14:55 history | grep "$(date +%Y-%m-%d)" | awk '{ "Date = " $2 "Command = " $4 }'
-2023-03-29 23:15:04 history | grep "$(date +%Y-%m-%d)" | awk 'print{ "Date = " $2 "Command = " $4 }'
-2023-03-29 23:15:27 history | grep "$(date +%Y-%m-%d)" | awk '{print( "Date = " $2 "Command = " $4 )}'
-2023-03-29 23:15:41 history | grep "$(date +%Y-%m-%d)" | awk '{print( "Date = " $2 " Command = " $4 )}'
-2023-03-29 23:16:13 history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 $2 $4 )}'
-2023-03-29 23:16:26 history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 " " $2 " " $4 )}'
-2023-03-29 23:16:38 history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 " " $2 " " $4 )}'
-2023-03-29 23:17:34 history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 " " $2 " " $4 )}' > test1.txt
-2023-03-29 23:17:35 ls
-2023-03-29 23:17:39 cat test1.txt
-2023-03-29 23:18:14 history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 " " $2 " " $4 )}' > $(date +%Y%m%d).txt
-2023-03-29 23:18:16 ls
-2023-03-29 23:18:23 cat 20230329.txt
-2023-03-29 23:20:57 ls
-2023-03-29 23:22:50 pwd
-2023-03-29 23:27:48 echo "# CommandPractice" >> README.md
-2023-03-29 23:27:49 ls
-2023-03-29 23:27:53 git init
-2023-03-29 23:28:08 git commit -m "first commit"
-2023-03-29 23:28:31 git add README.md
-2023-03-29 23:28:41 git commit -m "first commit"
-2023-03-29 23:29:23 git config --global user.email '27tkd@naver.com'
-2023-03-29 23:29:33 git config --global user.name '27tkd'
-2023-03-29 23:29:40 git config --list
-2023-03-29 23:30:19 git branch -M main
-2023-03-29 23:30:56 git remote add origin https://github.com/Parksanghyeon97/CommandPractice.git
-2023-03-29 23:31:11 git push -u origin main
-2023-03-29 23:32:58 ls
-2023-03-29 23:33:35 git add 20230329.txt
-2023-03-29 23:33:52 git commit -m "second commit"
-2023-03-29 23:34:12 git push origin main
-2023-03-29 23:37:21 ls
-2023-03-29 23:37:45 vi play.sh
-2023-03-29 23:43:01 vi .vimrc
-2023-03-29 23:43:18 ls
-2023-03-29 23:43:22 ls -al
-2023-03-29 23:43:30 rm -f .vimrc
-2023-03-29 23:43:32 ls -al
-2023-03-29 23:47:34 cd
-2023-03-29 23:47:44 cd/
-2023-03-29 23:47:46 cd /
-2023-03-29 23:47:46 ls
-2023-03-29 23:48:03 vi .vimrc
-2023-03-29 23:49:49 source .vimrc
-2023-03-29 23:50:11 cd ~
-2023-03-29 23:50:11 ls
-2023-03-29 23:50:16 vim .vimrc
-2023-03-29 23:50:51 vi gi.txt
-2023-03-29 23:50:57 vim gi.txt
-2023-03-29 23:51:12 vim .vimrc
-2023-03-29 23:51:53 vi ~/.bashrc
-2023-03-29 23:53:16 . ~/.bashrc
-2023-03-29 23:53:19 ls
-2023-03-29 23:53:22 cd test
-2023-03-29 23:53:22 ls
-2023-03-29 23:53:25 vi test2.txt
-2023-03-29 23:53:33 cd /
-2023-03-29 23:53:34 ls
-2023-03-29 23:53:36 ls -al
-2023-03-29 23:53:41 vi .vimrc
-2023-03-29 23:55:28 . ~/.bashrc
-2023-03-29 23:55:29 ls
-2023-03-29 23:55:33 cd ~
-2023-03-29 23:55:35 cd test
-2023-03-29 23:55:35 ls
-2023-03-29 23:55:44 vi test2.txt
-2023-03-29 23:56:01 cd /
-2023-03-29 23:56:01 ls
-2023-03-29 23:56:06 vi .vimrc
-2023-03-29 23:56:13 cd ~
-2023-03-29 23:56:14 ls
-2023-03-29 23:56:16 cd test
-2023-03-29 23:56:17 ls
-2023-03-29 23:56:20 vi test2.txt
-2023-03-29 23:56:33 ls
-2023-03-29 23:56:35 cd ..
-2023-03-29 23:56:36 ls
-2023-03-29 23:56:37 ls -al
-2023-03-29 23:56:45 cat .vimrc
-2023-03-29 23:56:52 vi .vimrc
-2023-03-29 23:57:09 . ~/.bashrc
-2023-03-29 23:57:12 cd test
-2023-03-29 23:57:12 ls
-2023-03-29 23:57:15 vi test2.txt
-2023-03-29 23:57:27 vi play.sh
-2023-03-29 23:59:30 ls
-2023-03-29 23:59:36 chmode 755 play.sh
-2023-03-29 23:59:41 chmod 755 play.sh
-2023-03-29 23:59:42 ls
-2023-03-29 23:59:51 play.sh
-2023-03-29 23:59:56 /.play.sh
-2023-03-29 23:59:59 .play.sh
 2023-03-30 00:00:03 ./play.sh
 2023-03-30 00:00:18 vi play.sh
 2023-03-30 00:01:27 ./play.sh
@@ -466,3 +339,17 @@
 2023-03-30 16:44:07 vi play
 2023-03-30 16:44:12 vi play.sh
 2023-03-30 16:44:36 source play.sh
+2023-03-30 16:44:43 cat 20230330.txt
+2023-03-30 16:44:52 ls
+2023-03-30 16:45:16 mv play.sh autocommit.sh
+2023-03-30 16:45:17 ls
+2023-03-30 16:47:50 history
+2023-03-30 16:47:52 ls
+2023-03-30 16:49:09 vi autocommit.sh
+2023-03-30 16:50:56 cat autocommit.sh
+2023-03-30 16:56:46 ls
+2023-03-30 16:56:49 cat 20230330.txt
+2023-03-30 16:57:47 ls
+2023-03-30 16:57:50 vi autocommit.sh
+2023-03-30 16:58:08 ls
+2023-03-30 16:58:25 source autocommit.sh

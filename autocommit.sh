@@ -2,7 +2,7 @@
 
 echo "============start==============="
 
-history | awk '{$1=""; print $0}' | sed 's/^ //' > $(date +%Y%m%d).txt
+history | awk '{$1=""; print $0}' | sed 's/^ //' | grep "^$(date +%Y-%m-%d)" > $(date +%Y%m%d).txt
 
 if [ $# -eq 0 ] ; then
 	echo "$(date +%Y%m%d).txt Maked"
