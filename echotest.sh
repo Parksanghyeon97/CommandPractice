@@ -1,3 +1,8 @@
 #!/bin/bash
 
-echo "hello"
+
+name=sanghyeon
+echo "start"
+
+read=$name
+echo $name
