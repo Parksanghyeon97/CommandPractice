@@ -1,24 +1,3 @@
-sudo yum install epel-release -y
-exit
-yum -y install httpd mod_ssl
-echo '<?php phpinfo(); ?>' > /var/www/html/index.php
-ls /var/www/html/index.php
-systemctl enable --now httpd
-curl localhost/index.php
-exit
-echo 'hello world' > /var/www/html/index.html
-exit
-cd /var/www/html
-ls -al
-rm -f .htaccess 
-ls
-cd -
-exit
-cd ~/ansible/09_roles
-exit
-scp /etc/hosts root@ansible4:/etc/hosts
-ls
-cd ~
 ls
 exit
 vi ~/.bashrc
@@ -997,4 +976,25 @@ ls -al
 cat /var/log/cron
 ls
 autocommit2.sh
+history -w
+ls
+cat 202303331.txt
+autocommit2.sh
+cat 20230331.txt
+ls
+history -w
+date
+ls
+date
+l
+ls
+date
+cat /var/log/cron
+ls
+cat 20230331.txt
+history
+ls
+cat autocommit2.sh
+cat ~/.bash_history | egrep -v '^#'
+ls
 history -w
