@@ -1,194 +1,961 @@
-2023-03-31 15:24:36 vi /etc/sudoers
-2023-03-31 15:24:36 sudo yum install epel-release -y
-2023-03-31 15:24:36 exit
-2023-03-31 15:24:36 yum -y install httpd mod_ssl
-2023-03-31 15:24:36 echo '<?php phpinfo(); ?>' > /var/www/html/index.php
-2023-03-31 15:24:36 ls /var/www/html/index.php
-2023-03-31 15:24:36 systemctl enable --now httpd
-2023-03-31 15:24:36 curl localhost/index.php
-2023-03-31 15:24:36 exit
-2023-03-31 15:24:36 echo 'hello world' > /var/www/html/index.html
-2023-03-31 15:24:36 exit
-2023-03-31 15:24:36 cd /var/www/html
-2023-03-31 15:24:36 ls -al
-2023-03-31 15:24:36 rm -f .htaccess
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 cd -
-2023-03-31 15:24:36 exit
-2023-03-31 15:24:36 cd ~/ansible/09_roles
-2023-03-31 15:24:36 exit
-2023-03-31 15:24:36 scp /etc/hosts root@ansible4:/etc/hosts
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 cd ~
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 exit
-2023-03-31 15:24:36 vi ~/.bashrc
-2023-03-31 15:24:36 . ~/.bashrc
-2023-03-31 15:24:36 vi ~/.bashrc
-2023-03-31 15:24:36 . ~/.bashrc
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 cd /
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 cd ..
-2023-03-31 15:24:36 history
-2023-03-31 15:24:36 history -s
-2023-03-31 15:24:36 man history
-2023-03-31 15:24:36 cat .bash_history
-2023-03-31 15:24:36 ls -al
-2023-03-31 15:24:36 cd ~
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 ls -al
-2023-03-31 15:24:36 cat .bash_history
-2023-03-31 15:24:36 ls -l /etc/profile
-2023-03-31 15:24:36 cat /etc/profile
-2023-03-31 15:24:36 vi /etc/profile
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 vi play.sh
-2023-03-31 15:24:36 crontab -l
-2023-03-31 15:24:36 crontab -e
-2023-03-31 15:24:36 date
-2023-03-31 15:24:36 crontab -l
-2023-03-31 15:24:36 crontab -e
-2023-03-31 15:24:36 systemctl status crond
-2023-03-31 15:24:36 crontab -e
-2023-03-31 15:24:36 date
-2023-03-31 15:24:36 crontab -e
-2023-03-31 15:24:36 date
-2023-03-31 15:24:36 crontab -e
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 date
-2023-03-31 15:24:36 crontab -e
-2023-03-31 15:24:36 crontab -l
-2023-03-31 15:24:36 date
-2023-03-31 15:24:36 pwd
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 vi echotest.sh
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 chmod +x echotest.sh
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 ls -l
-2023-03-31 15:24:36 ./echotest.sh
-2023-03-31 15:24:36 pwd
-2023-03-31 15:24:36 crontab -e
-2023-03-31 15:24:36 crontab -l
-2023-03-31 15:24:36 cat /etc/cron
-2023-03-31 15:24:36 cat /etc/cron.d
-2023-03-31 15:24:36 cat /etc/crontab
-2023-03-31 15:24:36 echo $PATH
-2023-03-31 15:24:36 bash
-2023-03-31 15:24:36 ls
-2023-03-31 15:24:36 exit
-2023-03-31 01:34:21 tty
-2023-03-31 01:34:57 yum -y install epel-release
-2023-03-31 01:35:18 yum-config-manager --enable epel --enable epel-modular
-2023-03-31 01:35:27 yum install banner -y
-2023-03-31 01:36:14 banner coffe > /dev/pts/0
-2023-03-31 01:36:49 cd
-2023-03-31 01:36:50 ls
-2023-03-31 01:36:59 vi /root/bin/backup.sh
-2023-03-31 01:37:35 cd /root
-2023-03-31 01:37:36 ls
-2023-03-31 01:37:38 cd bin
-2023-03-31 01:37:42 mkdir -p bin
-2023-03-31 01:37:42 ls
-2023-03-31 01:37:47 vi /root/bin/backup.sh
-2023-03-31 01:38:06 chmod 700 /root/bin/backup.sh
-2023-03-31 01:38:11 ls -ld /home
-2023-03-31 01:38:19 ls -ld /backup
-2023-03-31 01:38:27 mkdir -p /backup
-2023-03-31 01:38:28 ls
-2023-03-31 01:38:36 cd /
-2023-03-31 01:38:37 ls
-2023-03-31 01:38:49 cd ~
-2023-03-31 01:38:50 pwd
-2023-03-31 01:38:57 crontab -e
-2023-03-31 01:39:13 cd /backup
-2023-03-31 01:39:14 ls
-2023-03-31 01:39:22 watch ls -1 /backup
-2023-03-31 01:41:09 ls
-2023-03-31 01:41:15 crontab -e
-2023-03-31 01:41:24 ls
-2023-03-31 01:41:28 cd ..
-2023-03-31 01:41:29 ls
-2023-03-31 01:41:31 cd ..
-2023-03-31 01:41:31 ls
-2023-03-31 01:41:33 cd ~
-2023-03-31 01:41:33 ls
-2023-03-31 01:41:36 cd test
-2023-03-31 01:41:36 ls
-2023-03-31 01:41:43 autocommit.sh
-2023-03-31 01:41:54 ls
-2023-03-31 01:42:08 cat 2023033
-2023-03-31 01:42:11 cat 2023031.txt
-2023-03-31 01:42:20 cat 20230331.txt
-2023-03-31 01:42:22 ls
-2023-03-31 01:42:25 history
-2023-03-31 01:42:29 ls
-2023-03-31 01:43:18 source /etc/profile
-2023-03-31 01:43:19 ls
-2023-03-31 01:43:22 history
-2023-03-31 01:43:24 ls
-2023-03-31 01:43:31 autocommit.sh
-2023-03-31 01:43:40 cat 20230331.txt
-2023-03-31 01:43:45 cat 20230330.txt
-2023-03-31 01:43:46 ls
-2023-03-31 01:43:56 vi autocommit.sh
-2023-03-31 01:44:05 ls
-2023-03-31 01:44:08 history
-2023-03-31 01:44:11 ls
-2023-03-31 01:44:17 cat 20230331.txt
-2023-03-31 01:44:20 autocommit.sh
-2023-03-31 01:44:29 vi autocommit.sh
-2023-03-31 01:44:42 history | awk '{$1=""; print $0}' | sed 's/^ //' | grep "^$(date +%Y-%m-%d)"
-2023-03-31 01:45:02 cat autocommit.sh
-2023-03-31 01:45:15 ls
-2023-03-31 01:45:22 source 20230331.txt
-2023-03-31 01:45:32 source autocommit.sh
-2023-03-31 01:45:46 cat 20230331.txt
-2023-03-31 01:45:48 ls
-2023-03-31 01:45:53 cat 20230330
-2023-03-31 01:45:55 cat 20230330.txt
-2023-03-31 01:46:00 crontab -e
-2023-03-31 01:46:58 ls
-2023-03-31 01:47:15 crontab -l
-2023-03-31 01:47:35 date
-2023-03-31 01:48:23 crontab -e
-2023-03-31 01:48:34 date
-2023-03-31 01:50:21 crontab -e
-2023-03-31 01:50:30 ls
-2023-03-31 01:50:38 vi autocommit.sh
-2023-03-31 01:51:07 crontab -l
-2023-03-31 01:51:11 crontab -r
-2023-03-31 01:51:12 ls
-2023-03-31 01:51:35 mv echotest.sh crontest.sh
-2023-03-31 01:51:35 ls
-2023-03-31 01:51:39 cat crontest.sh
-2023-03-31 01:51:49 crontest.sh
-2023-03-31 12:11:19 history
-2023-03-31 12:11:23 init 0
-2023-03-31 15:24:39 ls
-2023-03-31 15:24:41 cd test
-2023-03-31 15:24:41 ls
-2023-03-31 15:24:51 autocommit.sh
-2023-03-31 15:24:57 ./autocommit.sh
-2023-03-31 15:25:07 cat 2023033.txt
-2023-03-31 15:25:20 crontab -e
-2023-03-31 15:25:39 date
-2023-03-31 15:25:48 ps
-2023-03-31 15:25:57 date
-2023-03-31 15:26:17 crontab -l
-2023-03-31 15:26:35 crontab -e
-2023-03-31 15:26:52 banner hello
-2023-03-31 15:26:54 crontab -e
-2023-03-31 15:27:04 crontab -l
-2023-03-31 15:27:06 date
-2023-03-31 15:27:22 crontab -e
-2023-03-31 15:27:50 ls
-2023-03-31 15:27:59 crontab -l
-2023-03-31 15:28:03 date
-2023-03-31 15:28:50 vi crontest.sh
-2023-03-31 15:29:07 ./crontest.sh
-2023-03-31 15:29:18 source autocommit.sh
-2023-03-31 15:29:23 cat 20230331.txt
-2023-03-31 15:30:17 source /etc/profile
-2023-03-31 15:30:21 source autocommit.sh
+vi /etc/sudoers
+sudo yum install epel-release -y
+exit
+yum -y install httpd mod_ssl
+echo '<?php phpinfo(); ?>' > /var/www/html/index.php
+ls /var/www/html/index.php
+systemctl enable --now httpd
+curl localhost/index.php
+exit
+echo 'hello world' > /var/www/html/index.html
+exit
+cd /var/www/html
+ls -al
+rm -f .htaccess 
+ls
+cd -
+exit
+cd ~/ansible/09_roles
+exit
+scp /etc/hosts root@ansible4:/etc/hosts
+ls
+cd ~
+ls
+exit
+vi ~/.bashrc
+. ~/.bashrc
+vi ~/.bashrc
+. ~/.bashrc
+ls
+cd /
+ls
+cd ..
+history
+history -s
+man history
+cat .bash_history
+ls -al
+cd ~
+ls
+ls -al
+cat .bash_history
+ls -l /etc/profile
+cat /etc/profile
+vi /etc/profile
+history
+cd
+ls
+cd ..
+ls
+history
+vi /etc/profile
+source /etc/profile
+history | egrep $1=="dat"
+date
+date + "%G%m%e%H%M"
+date + "%Y"
+date +%a
+date +%Y
+date +%Y-%m
+date +%Y-%m-%d
+history | egrep '`date +%Y-%m-%d`'
+history | grep "2023-03-29"
+cd ~
+mkdir -p test
+ls
+cd test
+ls
+history | grep `history | grep $(date +%Y-%m-%d)
+history | grep `history | grep "$(date +%Y-%m-%d)"
+history | grep "$(date +%Y-%m-%d)"
+history | grep "$(date +%Y-%m-%d)" | awk '$1 == "$(date +%Y-%m-%d)"'
+history |  awk '$1 == "$(date +%Y-%m-%d)"'
+history | awk '$1 == "$(date +%Y-%m-%d)"'
+history | grep "$(date +%Y-%m-%d)"
+history | grep "$(date +%Y-%m-%d)" | awk { $1 == $(date +%Y-%m-%d)}
+history | grep "$(date +%Y-%m-%d)" | awk { print $1 }
+history | grep "$(date +%Y-%m-%d)" | awk '{ print $1 }'
+history | grep "$(date +%Y-%m-%d)" | awk '{ print $2 }'
+history | grep "$(date +%Y-%m-%d)" | awk '{ "Date = "print $2 "Command = "print $4 }'
+history | grep "$(date +%Y-%m-%d)" | awk '{ "Date = " $2 "Command = " $4 }'
+history | grep "$(date +%Y-%m-%d)" | awk 'print{ "Date = " $2 "Command = " $4 }'
+history | grep "$(date +%Y-%m-%d)" | awk '{print( "Date = " $2 "Command = " $4 )}'
+history | grep "$(date +%Y-%m-%d)" | awk '{print( "Date = " $2 "   Command = " $4 )}'
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 $2 $4 )}'
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 " " $2 " " $4 )}'
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 "  " $2 "  " $4 )}'
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 "  " $2 "  " $4 )}' > test1.txt
+ls
+cat test1.txt
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 "  " $2 "  " $4 )}' > $(date +%Y%m%d).txt
+ls
+cat 20230329.txt 
+ls
+pwd
+echo "# CommandPractice" >> README.md
+ls
+git init
+git commit -m "first commit"
+git add README.md 
+git commit -m "first commit"
+git config --global user.email '27tkd@naver.com'
+git config --global user.name '27tkd'
+git config --list
+git branch -M main
+git remote add origin https://github.com/Parksanghyeon97/CommandPractice.git
+git push -u origin main
+ls
+git add 20230329.txt
+git commit -m "second commit"
+git push origin main 
+ls
+vi play.sh
+vi .vimrc
+ls
+ls -al
+rm -f .vimrc
+ls -al
+cd
+cd/
+cd /
+ls
+vi .vimrc
+source .vimrc
+cd ~
+ls
+vim .vimrc
+vi gi.txt
+vim gi.txt
+vim .vimrc
+vi ~/.bashrc
+. ~/.bashrc
+ls
+cd test
+ls
+vi test2.txt
+cd /
+ls
+ls -al
+vi .vimrc
+. ~/.bashrc
+ls
+cd ~
+cd test
+ls
+vi test2.txt
+cd /
+ls
+vi .vimrc
+cd ~
+ls
+cd test
+ls
+vi test2.txt
+ls
+cd ..
+ls
+ls -al
+cat .vimrc
+vi .vimrc
+. ~/.bashrc
+cd test
+ls
+vi test2.txt
+vi play.sh
+ls
+chmode 755 play.sh
+chmod 755 play.sh
+ls
+play.sh
+/.play.sh
+.play.sh
+./play.sh
+vi play.sh
+./play.sh
+ls
+cat 20230330.txt
+ls
+./play.sh
+ls
+cat 20230330.txt 
+history
+ls
+cat play.sh 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 "  " $2 "  " $4 )}'
+ls
+cat 20230330.txt 
+rm 20230329.txt
+rm -f 20230330.txt
+ls
+./play.sh 
+ls
+cat 20230330.txt 
+vi play.sh 
+./play.sh 
+ls
+./play.sh 
+cat 20230330.txt 
+vi play.sh 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 "  " $2 "  " $4 )}' >> $(date +%Y%m%d).txt
+ls
+cat 20230330.txt 
+rm -f 20230330.txt 
+ls
+vi play.sh 
+./play.sh 
+ls
+cat 20230330.txt 
+vi play.sh 
+./play.sh 
+cat 20230330.txt 
+vi play.sh 
+cd ..
+ls
+ls -al
+vi .vimrc
+cd test
+ls
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+firefox &
+ls
+cd..
+cd ..
+ls
+mkdir -p test2
+cd test2
+ls
+git clone https://minimin2.tistory.com/145
+ls
+git clone https://github.com/rafi/awesome-vim-colorschemes 
+ls
+cd awesome-vim-colorschemes/
+ls
+mv colors ~/.vim/colors
+mv colors/ ~/.vim/colors
+mv /colors ~/.vim/colors
+cd colors/
+ls
+mkdir -p ~/.vim/colors
+cd..
+cd ..
+ls -ld ~/.vim/colors/
+ls ~/.vim/colors/
+tree ~/.vim/colors/
+rm -f ~/.vim/colors
+cd ~ /.vim
+cd ~/.vim
+ls
+rm -f colors/
+rm -rf colors/
+ls
+cd ~/test2/awesome-vim-colorschemes/
+ls
+mv colors/ ~/.vim/
+cd ~/.vim
+ls
+cd colors/
+ls
+cd ~/test2/awesome-vim-colorschemes
+ls
+cd
+vi ~/.vimrc
+vi ~/.bashrc
+cd test
+ls
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+. ~/.vimrc
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+vi ~/.vimrc
+vi play.sh 
+./play.sh 
+ls
+cat 20230330.txt 
+vi play.sh 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $1 "  " $2 "  " $4 )}' > $(date +%Y%m%d).txt
+ls
+cat 20230330.txt 
+vi play.sh 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $2 "  " $4 )}' > $(date +%Y%m%d).txt
+ls
+cat 20230330.txt 
+ls
+vi play.sh 
+./play.sh 
+vi play.sh 
+./play.sh 
+git add 20230330.txt 
+git commit -m "3"
+git push origin main 
+./play.sh 
+ls
+rm 20230330.txt 
+ls
+./play.sh 
+git rm 20230329.txt
+./play.sh 
+git add test1.txt
+./play.sh 
+git push
+./play.sh 
+ls
+cat 20230330.txt 
+crontab -e
+date
+ls
+vi echotest.sh 
+date
+crontab -l
+date
+systemctl stop crond
+systemctl status crond.service 
+systemctl start crond.service 
+systemctl status crond.service 
+ls
+crontab -l
+pwd
+date
+crontabe -l
+crontab -e
+systemctl restart crond.service 
+ls
+date
+crontab -e
+systemctl restart crond.service 
+date
+ls
+vi play.sh 
+crontab -l
+crontab -e
+date
+crontab -l
+crontab -e
+systemctl status crond
+crontab -e
+date
+crontab -e
+date
+crontab -e
+ls
+date
+crontab -e
+crontab -l
+date
+pwd
+ls
+vi echotest.sh
+ls
+chmod +x echotest.sh 
+ls
+ls -l
+./echotest.sh 
+pwd
+crontab -e
+crontab -l
+cat /etc/cron
+cat /etc/cron.d
+cat /etc/crontab 
+echo $PATH
+./play.sh
+cat play.sh
+git push --help 
+man git-ush
+man git-push
+git-push --help
+git --help 
+git help push
+git help -g 
+git --help 
+git push --help
+git-push --help
+man git-push
+git-push --help
+ls
+docker ps -a
+ls
+cat 20230330.txt 
+source play.sh
+cat 20230330.txt 
+source play2.sh
+source ./play2.sh
+source play.2sh
+ls
+source play2.sh
+vi play
+vi play2.sh
+ls
+cat 20230330.txt 
+./echotest.sh 
+./play2.sh
+source ./play2.sh
+history
+vi /etc/profile
+source /etc/profile
+source play2.sh
+ls
+source play.sh
+ls
+cat 20230330.txt 
+history
+ls
+git config credential.helper store
+ls
+git config --global credential.helper
+git config --global credential.helper 'cache --timeout 7200'
+vi ~/.git-credentials
+ls
+source play.sh
+ls
+source play
+source play.sh
+echo "2nd test" >> test2.txt
+source play.sh
+ls
+vi play.sh
+ls
+cat 20230330.txt 
+ls
+history | grep source
+vi echotest.sh
+history
+ls
+source echotest.sh 
+vi /etc/profile
+source echotest.sh 
+history
+ls
+history
+source /etc/profile
+history
+. /etc/profile
+history
+vi /etc/profile
+ls
+cat 20230330.txt 
+history
+history | awk '{ for (i=2; i<=NF; i++) { print $i } }'
+history | awk '{ for (i=2; i<=NF; i++) { printf "%s ", $i } }'
+history
+history | awk '{$1=""; print $0}' | sed 's/^ //'
+ls
+vi play
+vi play.sh
+source play.sh
+cat 20230330.txt 
+ls
+mv play.sh autocommit.sh
+ls
+history
+ls
+vi autocommit.sh 
+cat autocommit.sh 
+ls
+cat 20230330.txt 
+ls
+vi autocommit.sh 
+ls
+source autocommit.sh 
+ls
+cat 20230330.txt 
+ls
+cat autocommit.sh 
+ls
+crontab -e
+date
+ls
+crontab -e
+echo $PATH
+pwd
+PATH=$PATH:/root/test
+echo $PATH
+ls
+cat echotest.sh 
+vi echotest.sh 
+echotest.sh 
+play2.sh
+cat play2.sh
+history
+ls
+autocommit.sh 
+cat 20230330.txt 
+ls
+vi autocommit.sh 
+history | awk '{$1=""; print $0}' | sed 's/^ //' | grep "^$(date +%Y-%m-%d)"
+ls
+source play2.sh
+ls
+source autocommit.sh 
+pwd
+ls
+pwd
+crontab -e
+ls
+crontab -e
+ls
+pwd
+cd ..
+ls
+pwd
+cd ..
+ls
+pwd
+cd /root/test
+ls
+crontab -e
+systemctl restart crond.service 
+systemctl status crond.service 
+ls
+crontab -l
+crontab -e
+ls
+vi echotest.sh 
+pwd
+crontab -l
+ls -al echotest.sh 
+crontab -r
+crontab -l
+crontab -e
+crontab -l
+ls
+systemctl restart crond.service 
+systemctl status crond.service
+ls
+cat README.md 
+service cron start
+ps 
+exit
+bash
+ls
+exit
+ls
+cd test
+ls
+crontab -l
+crontab -e
+./play.sh 
+ls
+vi play.sh
+ls
+vi echotest.sh 
+./echotest.sh 
+vi echotest.sh 
+./echotest.sh 
+man if
+cat 20230330.txt 
+vi play.sh 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $2 "  " $4 )}' > $(date +%Y%m%d).txt
+ls
+cat 20230330.txt 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $2 "  " $4 )}'
+history | grep "$(date +%Y-%m-%d)"
+history
+history | grep $(date +%Y-%m-%d)
+date
+history
+vi /etc/profile
+source /etc/profile
+history
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $2 "  " $4 )}'
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $2 "  " $4 )}' > $(date +%Y%m%d).txt
+ls
+cat 20230330.txt 
+ls
+rm -f 20230330.txt 
+ls
+./play.sh 
+ls
+cat 20230330.txt 
+vi play.sh 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $2 "  " $4 )}'
+ls
+vi play.sh
+history
+vi play.sh
+ls
+bash -x play.sh 
+cat play.sh
+history | grep "$(date +%Y-%m-%d)"
+cat play.sh 
+history | grep "$(date +%Y-%m-%d)" | awk '{print( $2 "  " $4 )}'
+vi play2.sh
+chmod +x *.sh
+./play2.sh
+bash -x play2.sh
+. play2.sh 
+clear
+ls
+cat play2.sh
+source play2.sh
+source play.sh
+gedit play.sh
+bash
+ls
+ps
+crontab -l
+date
+exit
+ls -al
+ls
+cd test
+ls
+crontab -l
+crontab -e
+crontab -r
+ls
+systemctl restart crond.service 
+ls
+crontab -e
+date
+ps
+ps -a
+ps -al
+ls
+crontab -e
+ls
+ps
+crontab -l
+cat /etc/crontab 
+cat /var/log/syslog
+crontab -e
+cat /var/spool/cron
+cd /var/spool/cron/
+ls
+cat root
+crontab -e
+cat /var/log/cron
+crontab -u root crontab
+crontab -u root
+crontab -e
+cat /var/log/cron
+crontab -e
+ls -al
+date
+cat /var/log/cron
+ps -ef | grep cron
+service crond start
+ps -ef | grep cron
+systemctl restart crond.service 
+ps -ef | grep cron
+crontab -e
+ls
+date
+crontab -e
+pgerp cron
+pgrep cron
+jobs
+job
+cat /etc/crontab
+vi /etc/crontab
+ls
+cat root
+ls
+cd ..
+c
+cd
+ls
+cd test
+ls
+crontab -e
+pwd
+ls
+cat /root/test/test1.txt
+ls
+pwd
+ls
+crontab -e
+ls
+PATH
+$(PATH)
+echo $(PATH)
+ls
+echo $(PATH)
+echo $PATH
+ls
+ps
+pwd
+ls
+play2.sh
+PATH=$PATH:/root/test
+echo $PATH
+echotest.sh
+ls
+crontab -e
+ls
+crontab -e
+crontab -l
+ls
+date
+crontab -r
+ls
+tty
+yum -y install epel-release
+yum-config-manager --enable epel --enable epel-modular
+yum install banner -y
+banner coffe > /dev/pts/0
+cd
+ls
+vi /root/bin/backup.sh
+cd /root
+ls
+cd bin
+mkdir -p bin
+ls
+vi /root/bin/backup.sh
+chmod 700 /root/bin/backup.sh
+ls -ld /home
+ls -ld /backup
+mkdir -p /backup
+ls
+cd /
+ls
+cd ~
+pwd
+crontab -e
+cd /backup
+ls
+watch ls -1 /backup
+ls
+crontab -e
+ls
+cd ..
+ls
+cd ..
+ls
+cd ~
+ls
+cd test
+ls
+autocommit.sh 
+ls
+cat 2023033
+cat 2023031.txt
+cat 20230331.txt
+ls
+history
+ls
+source /etc/profile
+ls
+history
+ls
+autocommit.sh 
+cat 20230331.txt
+cat 20230330.txt
+ls
+vi autocommit.sh 
+ls
+history
+ls
+cat 20230331.txt
+autocommit.sh 
+vi autocommit.sh 
+history | awk '{$1=""; print $0}' | sed 's/^ //' | grep "^$(date +%Y-%m-%d)"
+cat autocommit.sh 
+ls
+source 20230331.txt
+source autocommit.sh 
+cat 20230331.txt
+ls
+cat 20230330
+cat 20230330.txt
+crontab -e
+ls
+crontab -l
+date
+crontab -e
+date
+crontab -e
+ls
+vi autocommit.sh 
+crontab -l
+crontab -r
+ls
+mv echotest.sh crontest.sh
+ls
+cat crontest.sh 
+crontest.sh
+history
+init 0
+ls
+cd test
+ls
+autocommit.sh
+./autocommit.sh 
+cat 2023033.txt
+crontab -e
+date
+ps
+date
+crontab -l
+crontab -e
+banner hello
+crontab -e
+crontab -l
+date
+crontab -e
+ls
+crontab -l
+date
+vi crontest.sh 
+./crontest.sh 
+source autocommit.sh 
+cat 20230331.txt 
+source /etc/profile
+source autocommit.sh 
+history
+ls
+vi autocommit.sh 
+crontab -l
+echo $PATH
+man crontab
+crontab -l
+crontab -e
+crontab -r
+crontab -l
+pwd
+tty
+ps
+$PATH
+pwd
+cd /var/spool/cron
+ls
+cd ..
+cd
+cd /etc/cron.
+cd /etc/cron.d
+ls
+cd ..
+ls
+cd ..
+ls
+cd /etc/cron..d
+cd /etc/cron.d
+ls
+cd
+crontab -e
+cd /etc/cron.d
+ls
+vi crontab
+vi ~/.bashrc
+source ~/.bashrc
+echo $PATH
+cd /root/test
+ls
+crontest.sh 
+cat /var/log/cron
+tty
+ps
+crontab -l
+crontab -e
+ls
+cat play2.sh 
+crontab -e
+date
+cat /var/log/cron
+crontab -r
+crontab -l
+vi /etc/crontab
+ls
+crontab -e
+systemctl restart crond.service 
+cat crontest.sh 
+crontab -e
+crontab -l
+crontest.sh
+cat /var/log/cron
+cd /
+ls
+crontab -l
+date
+cat /var/log/crond
+cat /var/log/cron
+jobs
+crontab -u root -l
+crontab -e
+date
+crontab -e
+cd /usr/bin
+ls
+cd banner
+cat banner
+cd /test
+cd ~/test
+ls
+crontab -l
+date
+cat /var/log/cron
+find / -name "root"
+cat /var/log/cron
+while sleep 1m; do /usr/bin/banner hello; done
+vi /etc/cron.d
+vi /etc/crontab
+systemctl restart crond
+systemctl status crond
+date
+cat /var/log/cron
+init 0
+ls
+cat /var/log/cron
+exit
+crontab -e
+vi /root/bin/test3.sh
+which banner
+banner hello
+mailx
+crontab -e
+vi /root/bin/test3.sh
+date
+crontab -e
+vi /root/bin/test3.sh
+crontab -l
+ls
+crontab -l
+crontab -r
+ls
+pwd
+ls
+history
+source /etc/profile
+ls
+history
+ls
+crontab -e
+cat /var/log/cron
+ls
+cat 20230331.txt
+ls
+vi autocommit.sh 
+crontab -e
+vi autocommit.sh 
+history --help
+history ~/.bash_history
+cat ~/.bash_history
+history
+cat ~/.bash_history
+history
+history --help 
+history -w
