@@ -1,13 +1,3 @@
-history
-history -s
-man history
-cat .bash_history
-ls -al
-cd ~
-ls
-ls -al
-cat .bash_history
-ls -l /etc/profile
 cat /etc/profile
 vi /etc/profile
 history
@@ -996,5 +986,15 @@ cat ~/.bash_history | egrep -v '^#'
 ls
 autocommit2.sh
 cat 20230331.txt
+history
+history -w
+cat ~/.bash_history
+ls
+autocommit2.sh
+cat autocommit2.sh
+cat ~/.bash_history
+history -w
+cat ~/.bash_history
+ls
 history
 history -w
