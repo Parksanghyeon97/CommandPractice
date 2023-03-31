@@ -1,13 +1,3 @@
-ls
-exit
-vi ~/.bashrc
-. ~/.bashrc
-vi ~/.bashrc
-. ~/.bashrc
-ls
-cd /
-ls
-cd ..
 history
 history -s
 man history
@@ -997,4 +987,14 @@ ls
 cat autocommit2.sh
 cat ~/.bash_history | egrep -v '^#'
 ls
+history -w
+cat ~/.bash_history | egrep -v '^#'
+ls
+cat autocommit2.sh
+ls -al
+cat ~/.bash_history | egrep -v '^#'
+ls
+autocommit2.sh
+cat 20230331.txt
+history
 history -w
