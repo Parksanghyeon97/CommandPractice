@@ -1,4 +1,3 @@
-vi /etc/sudoers
 sudo yum install epel-release -y
 exit
 yum -y install httpd mod_ssl
@@ -958,4 +957,44 @@ history
 cat ~/.bash_history
 history
 history --help 
+history -w
+history
+cat ~/.bash_history 
+man hisotry
+man history
+ls
+cat ~/.bash_history 
+cat ~/.bash_history | egrep '^#'
+cat ~/.bash_history | egrep -v '^#'
+ls
+cp autocommit.sh autocommit2.sh 
+vi autocommit2.sh
+cat 20233031.txt
+cat 20230331.txt
+ls
+autocommit2.sh
+cat 20230331.txt
+ls
+history
+ls
+pwd
+crontab -e
+crontab -l
+date
+cat /var/log/cron
+date
+cat /var/log/cron
+ls
+cat 20230331.txt
+c
+cat /var/log/cron
+ls -al
+chmod 755 autocommit2.sh
+ls
+ls -al
+ls
+ls -al
+cat /var/log/cron
+ls
+autocommit2.sh
 history -w
